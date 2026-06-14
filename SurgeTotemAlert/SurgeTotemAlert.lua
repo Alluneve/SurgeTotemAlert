@@ -1370,7 +1370,7 @@ initFrame:SetScript("OnEvent", function(self, event, arg1)
         if not IsTotemicRestorationShaman() then
             print("|cFF00FF96SurgeTotemAlert:|r Loaded, but currently inactive (requires Totemic Restoration Shaman).")
         else
-            print("|cFF00FF96SurgeTotemAlert:|r Active. Type |cFFFFD100/STA|r to open options.")
+            print("|cFF00FF96SurgeTotemAlert:|r Active. Type |cFFFFD100/sta|r to open options.")
         end
 
     elseif event == "PLAYER_SPECIALIZATION_CHANGED" then
