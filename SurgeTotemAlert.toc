@@ -1,0 +1,8 @@
+## Interface: 120005
+## Title: SurgeTotemAlert
+## Notes: Sound alerts for missing Surging Totem. Totemic Restoration only.
+## Author: Alluneve
+## Version: 1.0.0
+## SavedVariables: SurgeTotemAlertDB
+
+SurgeTotemAlert.lua
