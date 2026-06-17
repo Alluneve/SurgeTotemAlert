@@ -1,4 +1,4 @@
-## Interface: 120005
+## Interface: 120005, 120007
 ## Title: SurgeTotemAlert
 ## Notes: Sound alerts for missing Surging Totem. Totemic Restoration only.
 ## Author: Alluneve
