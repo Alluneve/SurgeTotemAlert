@@ -1099,6 +1099,7 @@ local function BuildOptionsPanel()
         function() return db.timerEnabled end,
         function(v) db.timerEnabled = v end)
     yOff = yOff - 30
+    local threshLabel
     local _, threshEB = CreateEditBox(content, "Custom threshold (seconds):", 50, yOff, 80,
         function() return db.timerCustomSecs end,
         function(v)
@@ -1108,7 +1109,7 @@ local function BuildOptionsPanel()
                 threshLabel:SetText("Current: " .. n .. "s")
             end
         end)
-    local threshLabel = content:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    threshLabel = content:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     threshLabel:SetPoint("TOPLEFT", 50, yOff - 44)
     threshLabel:SetTextColor(0.7, 0.7, 0.7, 1)
     threshLabel:SetText("Current: " .. (db.timerCustomSecs or 4.5) .. "s")
@@ -1352,7 +1353,7 @@ initFrame:SetScript("OnEvent", function(self, event, arg1)
             InterfaceOptions_AddCategory(panel)
         end
 
-        SLASH_SurgeTotemALERT1 = "/STA"
+        SLASH_SurgeTotemALERT1 = "/sta"
         SlashCmdList["SurgeTotemALERT"] = function()
             if InCombatLockdown() then
                 pendingOptionsOpen = true
